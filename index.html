@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+   <head>
+     <title>title</title>
+      <script data-main="js/main" src="js/require.js"></script>
+      <script src="js/tmpl.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+     <script type="text/etonescript" id="wrapper">
+       <div class="wrapper">
+         <input type="text" class="list__input" placeholder="Add task">
+         <button class="list__add"><i class="icon-doc-text"></i></button>
+         <div class="pen"></div>
+         <ul class="list"></ul>
+       </div>
+     </script>
+     <script type="text/etonescript" id="list">
+          <%for (var i=0;i<data.length;i++){%>
+            <li class="list__item"><%=data[i]%> <span class="list__delete" data-value="<%=data[i]%>">x</span> <span class="list__edit" data-value="<%=data[i]%>"><i class="icon-feather"></i></span></li>
+         <%}%>
+     </script>
+   </body>
+</html>

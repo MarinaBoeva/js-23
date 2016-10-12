@@ -1,0 +1,69 @@
+body {
+  background-image: url(../img/Wood-Texture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper {
+  height: 600px;
+  width: 480px;
+  position: relative;
+  margin-left: 35%;
+  margin-top: 100px;
+  background-image: url(../img/note.jpg);
+  background-repeat: no-repeat;
+  text-indent: 28px;
+  font-family: cursive;
+}
+.list__input{
+  margin-top: 93px;
+  border: none;
+  border-bottom: 2px solid #a8a8a8;
+  font-family: cursive;
+}
+.list__add{
+  height: 24px;
+  vertical-align: text-top;
+  background-color: #fff;
+  border-bottom: 2px solid #a8a8a8;
+  font-size: 16px;
+  color: #1d1d1d;
+}
+.list{
+  max-height: 450px;
+  overflow-y: scroll;
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+}
+.list__item{
+  list-style:none;
+  color: #1d1d1d;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 26px;
+}
+.list__delete{
+  color:#760707;
+}
+.list__edit{
+  color: #1d1d1d;
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?76436924');
+  src: url('../font/fontello.eot?76436924#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?76436924') format('woff2'),
+       url('../font/fontello.woff?76436924') format('woff'),
+       url('../font/fontello.ttf?76436924') format('truetype'),
+       url('../font/fontello.svg?76436924#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.icon-feather:before { content: '\e801'; }
+.icon-doc-text:before { content: '\e802'; }
